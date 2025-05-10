@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController playerController;
     private Vector3 playerVelocity;
     private bool playerGrounded;
-    private float playerSpeed = 10f;
+    public float playerSpeed = 10f;
     //private float playerJumpHeight = 5f;
 
 
