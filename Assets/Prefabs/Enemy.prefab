@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcdf871527a87c341a0ce09f1a063787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHit: 5
+  enemyHit: 10
 --- !u!135 &4442543561476394233
 SphereCollider:
   m_ObjectHideFlags: 0

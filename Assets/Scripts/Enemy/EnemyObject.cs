@@ -9,7 +9,9 @@ public class EnemyObject : MonoBehaviour
         if (healthController != null)
         {
             healthController.GetDamage(enemyHit);
+            Destroy (gameObject);
         }
     }
 
 }
+ 
