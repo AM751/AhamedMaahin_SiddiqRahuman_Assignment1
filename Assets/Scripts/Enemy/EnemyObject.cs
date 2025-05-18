@@ -8,7 +8,6 @@ public class EnemyObject : MonoBehaviour
         var healthController = playerCollision.gameObject.GetComponent<HealthController>();
         if (healthController != null)
         {
-         //   Debug.Log("Hola");
             healthController.GetDamage(enemyHit);
         }
     }
