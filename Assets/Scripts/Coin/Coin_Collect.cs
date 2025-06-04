@@ -3,24 +3,15 @@ using UnityEngine;
 public class Coin_Collect : MonoBehaviour
 {
 
-    [SerializeField] public int coinsCollected;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private int _coinsCollected = 1;
+
+    private void OnCollisionEnter(Collision collision)
     {
-        coinsCollected = 0;
+        var coinsCollector = collision.gameObject.GetComponent<CollectingController>();
+        if (coinsCollector != null)
+        {
+          coinsCollector.CoinsCollected(_coinsCollected);
+          Destroy(gameObject);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision == null)
-    //    {
-
-    //    }
-    //}
 }
