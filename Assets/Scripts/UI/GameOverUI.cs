@@ -16,7 +16,7 @@ public class GameOverUI : MonoBehaviour
         healthBarUI.OnHealthUpdated -= GameOverCanvas;
     }
 
-    private void GameOverCanvas(float damage, float fullHealth, float currentHealth)
+    public void GameOverCanvas(float damage, float fullHealth, float currentHealth)
     {
         if (healthBarUI != null && currentHealth <= 0)
         {
