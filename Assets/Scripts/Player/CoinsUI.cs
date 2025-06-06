@@ -19,6 +19,7 @@ public class CoinsUI : MonoBehaviour
 
     private void coinsPlus(int totalCoin)
     {
+        Debug.Log (totalCoin);
         _scoreUI.text = "Coins: " + totalCoin;
     }
 }

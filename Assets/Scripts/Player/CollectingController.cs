@@ -14,12 +14,6 @@ public class CollectingController : MonoBehaviour
         coins = _coinsCount;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void CoinsCollected(int coin)
     {
         coins += coin ;

@@ -19,5 +19,6 @@ public class HealthBarUI : MonoBehaviour
     {
         healthBarImage.fillAmount = currentHealth / fullHealth;
     }
+    
 
 }
